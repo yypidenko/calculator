@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- мои стили -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>calculator</title>
+</head>
+
+<body>
+    <!-- фигуры -->
+    <section>
+        <div class="name">
+            <p>Paralelogram</p>
+        </div>
+        <div class="flex">
+            <div class="figure">
+                <svg id="paralelogram-figure">
+                    <foreignObject x="0" y="0" width="100%" height="100%">
+                        <div></div>
+                    </foreignObject>
+                </svg>
+            </div>
+
+            <div class="controls">
+                <label for="paralelogram-height"><span>A&nbsp;</span><input type="number" name=""
+                        id="paralelogram-height" min="0" value="100"></label>
+                <label for="paralelogram-width"><span>B&nbsp;</span><input type="number" name="" id="paralelogram-width"
+                        min="0" value="50"></label>
+                <label for="paralelogram-angle"><span>Angle&nbsp;</span><input type="number" name=""
+                        id="paralelogram-angle" maxlength="3" min="0" max="360" value="30"></label>
+                <div class="results">
+                    <p>Area: <span id="paralelogram-area">-</span></p>
+                    <p>h: <span id="paralelogram-h">-</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="name">
+            <!-- прямоугольный треугольник -->
+            <p>Right triangle</p>
+        </div>
+        <div class="flex">
+            <div class="figure">
+                <svg id="right_triangle-figure">
+                    <foreignObject x="0" y="0" width="100%" height="100%">
+                        <div></div>
+                    </foreignObject>
+                </svg>
+            </div>
+
+            <div class="controls">
+                <label for="right_triangle-height"><span>A&nbsp;</span><input type="number" name=""
+                        id="right_triangle-height" min="0" value="50"></label>
+                <label for="right_triangle-width"><span>B&nbsp;</span><input type="number" name=""
+                        id="right_triangle-width" min="0" value="50"></label>
+                <div class="results">
+                    <p>a: <span id="right_triangle-a">-</span></p>
+                    <p>b: <span id="right_triangle-b">-</span></p>
+                    <p>c: <span id="right_triangle-c">-</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="name">
+            <p>Circle</p>
+        </div>
+        <div class="flex">
+            <div class="figure">
+                <svg id="circle">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+                </svg>
+            </div>
+
+            <div class="controls-circle">
+                <label for="circle-radius"><span>R&nbsp;</span><input type="number" name="" id="circle-radius" min="0"
+                        value="40"></label>
+                <div class="results-circle">
+                    <p>Area: <span id="circle-area">-</span></p>
+                    <p>L: <span id="circle-length">-</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="name">
+            <p>Ellipse</p>
+        </div>
+        <div class="flex">
+            <div class="figure">
+                <svg id="ellipse">
+                    <ellipse cx="150" cy="75" rx="50" ry="30" />
+                </svg>
+            </div>
+
+            <div class="controls-ellipse">
+                <label for="ellipse-horizontal-radius"><span>Horizontal R&nbsp;</span><input type="number" name=""
+                        id="ellipse-horizontal-radius" min="0" value="50"></label>
+                <label for="ellipse-vertical-radius"><span>Vertical R&nbsp;</span><input type="number" name=""
+                        id="ellipse-vertical-radius" min="0" value="30"></label>
+                <div class="results-ellipse">
+                    <p>Area: <span id="ellipse-area">-</span></p>
+                    <p>L: <span id="ellipse-length">-</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="name">
+            <p>Square</p>
+        </div>
+        <div class="flex">
+            <div class="figure">
+                <svg id="square">
+                    <rect x="75" y="25" width="50" height="50" />
+                </svg>
+            </div>
+
+            <div class="controls-square">
+                <label for="square-side"><span>A&nbsp;</span><input type="number" name="" id="square-side" min="0"
+                        value="50"></label>
+                <div class="results-square">
+                    <p>Area: <span id="square-area">-</span></p>
+                    <p>Diagonal: <span id="square-diagonal">-</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="name">
+            <!-- прямоугольник -->
+            <p>Rectangle</p>
+        </div>
+        <div class="flex">
+            <div class="figure">
+                <svg id="rectangle">
+                    <rect x="75" y="25" width="50" height="100" />
+                </svg>
+            </div>
+
+            <div class="controls-rectangle">
+                <label for="rectangle-width"><span>A&nbsp;</span><input type="number" name="" id="rectangle-width"
+                        min="0" value="50"></label>
+                <label for="rectangle-height"><span>B&nbsp;</span><input type="number" name="" id="rectangle-height"
+                        min="0" value="100"></label>
+                <div class="results-rectangle">
+                    <p>Area: <span id="rectangle-area">-</span></p>
+                    <p>Diagonal: <span id="rectangle-diagonal">-</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="calculator">
+        <button>calculate</button>
+    </section>
+    <!-- ----------------------------------------------- -->
+    <!-- скрипт -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
